@@ -21,43 +21,41 @@ pnpm dev
 
 ```
 {
-  "title": "User Registration",
-  "fields": [
+  "title": "User Registration Form",
+  "items": [
     {
-      "type": "string",
-      "label": "Name",
-      "name": "name",
-      "required": true
+      "label": "Full Name",
+      "type": "string"
     },
     {
-      "type": "number",
       "label": "Age",
-      "name": "age",
-      "required": true
+      "type": "number"
     },
     {
-      "type": "boolean",
-      "label": "Agree to terms",
-      "name": "agree",
-      "required": true
-    },
-    {
-      "type": "enum",
       "label": "Gender",
-      "name": "gender",
-      "options": ["Male", "Female", "Other"],
-      "required": true
+      "type": "enum",
+      "options": ["Male", "Female", "Other"]
+    },
+    {
+      "label": "Bio",
+      "type": "multi-line"
+    },
+    {
+      "label": "Accept Terms",
+      "type": "boolean"
+    },
+    {
+      "label": "Date of Birth",
+      "type": "date"
     }
   ],
   "buttons": [
-    {
-      "text": "Submit",
-      "action": "submit"
-    },
-    {
-      "text": "Reset",
-      "action": "reset"
-    }
+    { "text": "Save", "action": "save" },
+    { "text": "Cancel", "action": "cancel" },
+    { "text": "Submit", "action": "submit" },
+    { "text": "Reset", "action": "reset" },
+    { "text": "Clear", "action": "clear" },
+    { "text": "Validate", "action": "validate" }
   ]
 }
 ```
