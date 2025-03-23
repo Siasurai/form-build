@@ -19,44 +19,45 @@ pnpm dev
 
 #### Example JSON Configuration:
 
-```{
-"title": "User Registration",
-"fields": [
+```
 {
-"type": "string",
-"label": "Name",
-"name": "name",
-"required": true
-},
-{
-"type": "number",
-"label": "Age",
-"name": "age",
-"required": true
-},
-{
-"type": "boolean",
-"label": "Agree to terms",
-"name": "agree",
-"required": true
-},
-{
-"type": "enum",
-"label": "Gender",
-"name": "gender",
-"options": ["Male", "Female", "Other"],
-"required": true
-}
-],
-"buttons": [
-{
-"text": "Submit",
-"action": "submit"
-},
-{
-"text": "Reset",
-"action": "reset"
-}
-]
+  "title": "User Registration",
+  "fields": [
+    {
+      "type": "string",
+      "label": "Name",
+      "name": "name",
+      "required": true
+    },
+    {
+      "type": "number",
+      "label": "Age",
+      "name": "age",
+      "required": true
+    },
+    {
+      "type": "boolean",
+      "label": "Agree to terms",
+      "name": "agree",
+      "required": true
+    },
+    {
+      "type": "enum",
+      "label": "Gender",
+      "name": "gender",
+      "options": ["Male", "Female", "Other"],
+      "required": true
+    }
+  ],
+  "buttons": [
+    {
+      "text": "Submit",
+      "action": "submit"
+    },
+    {
+      "text": "Reset",
+      "action": "reset"
+    }
+  ]
 }
 ```
