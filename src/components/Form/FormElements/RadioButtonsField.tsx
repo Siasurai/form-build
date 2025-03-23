@@ -17,10 +17,15 @@ export const RadioButtonsField: React.FC<RadioButtonsFieldProps> = ({
   value,
   onChange,
 }) => {
+  const controlledValue = value === undefined ? options[0] : value;
+
   return (
     <div>
       <FormLabel component="legend">{label}</FormLabel>
-      <RadioGroup value={value} onChange={(e) => onChange(e.target.value)}>
+      <RadioGroup
+        value={controlledValue}
+        onChange={(e) => onChange(e.target.value)}
+      >
         {options.map((opt, idx) => (
           <FormControlLabel
             key={idx}
