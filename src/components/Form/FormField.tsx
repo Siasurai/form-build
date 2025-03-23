@@ -29,13 +29,11 @@ export const FormField: React.FC<Props> = ({ item, value, onChange }) => {
 
   if (item.type === "boolean") {
     return (
-      <label>
-        <CheckboxField
-          checked={value || false}
-          onChange={(e) => onChange(e.target.checked)}
-        />
-        {item.label}
-      </label>
+      <CheckboxField
+        checked={value || false}
+        onChange={(e) => onChange(e.target.checked)}
+        label={item.label}
+      />
     );
   }
 
